@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Animal_shelter
 {
-    class Eigenaar
+    public class Eigenaar
     {
         private string naam;
         private string Adres;

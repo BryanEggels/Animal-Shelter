@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 
 namespace Animal_shelter
 {
-    class Hond : Dier
+    public class Hond : Dier
     {
-        List<DateTime> uitlaatlijst;
+        
+
+        public List<DateTime> Uitlaatlijst { get; set; }
         public Hond(double prijs, string naam, Asiel asiel, bool man) : base(prijs, naam, asiel, man)
         {
-
+            Uitlaatlijst = new List<DateTime>();
+        }
+        public void walkdog(DateTime now)
+        {
+            Uitlaatlijst.Add(now);
         }
     }
 }

@@ -6,13 +6,16 @@ using System.Threading.Tasks;
 
 namespace Animal_shelter
 {
-    class Kat : Dier
+    public class Kat : Dier
     {
         private string informatie;
         public Kat(double prijs, string naam, Asiel asiel, bool man, string info) : base(prijs, naam, asiel, man)
         {
             informatie = info;
         }
-
+        public override string ToString()
+        {
+            return base.ToString() + " " + informatie;
+        }
     }
 }

@@ -6,11 +6,43 @@ using System.Threading.Tasks;
 
 namespace Animal_shelter
 {
-    class Asiel
+    public class Asiel
     {
-        private string Naam;
-        private string Locatie;
-        private string Informatie;
-        private List<Dier> Dieren;
+
+        public string naam
+        {
+            get
+            {
+                return naam;
+            }
+            set
+            {
+                naam = value;
+            }
+        }
+        
+        public string Locatie
+        {
+            get
+            {
+                return Locatie;
+            }
+            set
+            {
+                Locatie = value;
+            }
+        }
+        public string informatie
+        {
+            get
+            {
+                return informatie;
+            }
+            set
+            {
+                informatie = value;
+            }
+        }
+        public List<Dier> Dieren;
     }
 }
